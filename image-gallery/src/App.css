@@ -1,0 +1,47 @@
+/* src/App.css */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1.5fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.image {
+  cursor: pointer;
+}
+.image img {
+  width: 100%;
+  height: fullscreen;
+  display: block;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
